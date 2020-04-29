@@ -1,0 +1,19 @@
+.tree{
+  display: flex;
+  &__tree-section{
+
+  }
+  &__children-section{
+    margin-left: 50px;
+    &__children{
+      &::after{
+        content: ","
+      }
+      &--last{
+        &::after{
+          content: none;
+        }
+      }
+    }
+  }
+}
